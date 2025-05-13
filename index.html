@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Fun Page</h1>
+  </header>
+
+  <section id="buttonSection">
+    <button id="changeTextButton">Click Me!</button>
+  </section>
+
+  <section id="imageGallery">
+    <h2>Image Gallery</h2>
+    <div class="gallery">
+      <img src="image1.jpg" alt="Image 1" class="galleryImage">
+      <img src="image2.jpg" alt="Image 2" class="galleryImage">
+      <img src="image3.jpg" alt="Image 3" class="galleryImage">
+    </div>
+  </section>
+
+  <section id="tabs">
+    <button class="tab" onclick="showTab('tab1')">Tab 1</button>
+    <button class="tab" onclick="showTab('tab2')">Tab 2</button>
+    <div id="tab1" class="tabContent">
+      <p>This is the content for Tab 1.</p>
+    </div>
+    <div id="tab2" class="tabContent">
+      <p>This is the content for Tab 2.</p>
+    </div>
+  </section>
+
+  <section id="formValidation">
+    <form id="userForm">
+      <label for="email">Email: </label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="password">Password: </label>
+      <input type="password" id="password" name="password" required><br><br>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="feedback"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Interactive Webpage</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
